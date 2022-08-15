@@ -30,5 +30,5 @@
 请先检查模块是否正常激活，并且作用域是否勾选。如果排查后仍有错误，请[提交 Issue](https://github.com/GSWXXN/UnlockMiLink/issues/new)。或联系酷安[@迷璐](http://www.coolapk.com/u/1189245)
 
 ## 致谢
-模块使用 [Yuki Hook API](https://github.com/fankes/YukiHookAPI) 构建
+模块使用 [Yuki Hook API](https://github.com/fankes/YukiHookAPI) 构建  
 模块使用 [BlockMIUI](https://github.com/Block-Network/blockmiui) 构建界面
