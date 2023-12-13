@@ -9,7 +9,7 @@
 ## 使用方法
 
 1. 在Xposed管理器(LSPosed)中激活模块
-2. 作用域勾选 投屏`(com.milink.service)`、MIUI+ Beta版`(com.xiaomi.mirror)`、小米通信互联通信服务`(com.xiaomi.mi_connect_service)`
+2. 作用域勾选 投屏(aka 互联互通服务)`(com.milink.service)`、MIUI+ Beta版(aka 跨屏协同服务)`(com.xiaomi.mirror)`、小米通信互联通信服务`(com.xiaomi.mi_connect_service)`
 3. 重启三个作用域应用或重启手机
 
 ## 下载
@@ -18,7 +18,7 @@
 ## 注意事项
 1. 作用域中勾选 小米互联通信服务 后，在 小米妙享 PC 端手机屏幕镜像将会变大，如看不到屏幕镜像下半部分可以最大化窗口解决；此外，MIUI+ 面板也不会显示。
 2. 如果 PC 端没有镜像或扩展屏幕选项，请尝试断开重连。这是因为小米妙享 PC 端似乎有个缓存机制，会读取上一次连接设备的设备类型；如果修改设备类型为手机后，没有出现 MIUI+ 面板，同理。
-3. 使用小米妙享 PC 版需要在移动设备中升级以下组件
+3. 使用小米妙享 PC 版需要在移动设备中升级以下组件; 如果您对应的应用版本高于提供的版本, 则可以忽略此步
    * MIUI+ Beta版 3.7.26.d 
    * 投屏 13.2.0.13 
    * 小米通信互联服务 2.12.156  
@@ -30,5 +30,7 @@
 请先检查模块是否正常激活，并且作用域是否勾选。如果排查后仍有错误，请[提交 Issue](https://github.com/GSWXXN/UnlockMiLink/issues/new)。或联系酷安[@迷璐](http://www.coolapk.com/u/1189245)
 
 ## 致谢
-模块使用 [Yuki Hook API](https://github.com/fankes/YukiHookAPI) 构建  
-模块使用 [BlockMIUI](https://github.com/Block-Network/blockmiui) 构建界面
+使用 [Yuki Hook API](https://github.com/fankes/YukiHookAPI) 构建模块  
+使用 [BlockMIUI](https://github.com/Block-Network/blockmiui) 构建UI界面  
+使用 [DexKit](https://github.com/LuckyPray/DexKit) 查找被混淆的方法  
+使用 [libsu](https://github.com/topjohnwu/libsu) 执行 Shell 命令  
